@@ -21,5 +21,5 @@ function isEnoughCapacity(products = {}, containerSize = 0) {
     for (const value of Object.values(products)) {
         requiredCapacity += value;
     }
-    return requiredCapacity < containerSize;
+    return requiredCapacity <= containerSize;
 }
